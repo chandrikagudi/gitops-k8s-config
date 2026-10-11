@@ -1,0 +1,19 @@
+replicaCount: 2
+
+image:
+  repository: 926909119009.dkr.ecr.ap-south-1.amazonaws.com/flask-gitops-app
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 5000
+  nodePort: 30081
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
