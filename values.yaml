@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: 926909119009.dkr.ecr.ap-south-1.amazonaws.com/flask-gitops-app
-  tag: "latest"
+  tag: "9a57e73ba2065f01c83d98ec90db025aaa0f6c18"
   pullPolicy: Always
 
 service:
